@@ -147,7 +147,7 @@ All API responses follow a standardized structure to ensure consistency across t
 
 | Endpoint                  | Method | Description                                    |
 |---------------------------|--------|------------------------------------------------|
-| `/auth/register`          | POST   | Register akun pengguna                         |
+| `/auth/register`          | POST   | Register a user account                       |
 | `/auth/login`             | POST   | Login and get token                            |
 | `/users/me`               | GET    | View your own profile                          |
 | `/loyalty/points-user`    | GET    | View your own loyalty points                   |
