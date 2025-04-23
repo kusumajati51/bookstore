@@ -89,3 +89,10 @@ All API responses follow a standardized structure to ensure consistency across t
 | `/users/me`               | GET    | View your own profile                          |
 | `/loyalty/points-user`    | GET    | View your own loyalty points                   |
 | `/rewards/redeem-history` | GET    | View the history of rewards exchanged yourself |
+
+
+## 📑 Developer Docs
+
+- [API Docs](ApiDocumentation.md): Your guide to all backend endpoints — request structure, examples, and response schema.
+- [Spring Internal Map](HELP.md): View auto-generated Spring Boot metadata including routes and bean details.
+
