@@ -1,3 +1,65 @@
+🚀 How to Run the Project
+-------------------------
+
+Follow these steps to run the application locally:
+
+### 🔧 Prerequisites
+
+*   Java 17 or later
+*   Maven 3.6+
+*   PostgreSQL (Ensure your database is up and running)
+*   IDE (IntelliJ IDEA, VSCode, etc.)
+
+* * *
+
+### 📁 Setup Instructions
+
+1.  **Clone the repository**
+
+        git clone https://github.com/your-username/your-repo-name.git
+        cd your-repo-name
+
+
+2.  **Configure the environment**
+
+    Create a `.env` file in the root directory (if not exists):
+
+        APP_NAME=Bookstore
+        DB_URL=jdbc:postgresql://localhost:5432/testdb
+        DB_USERNAME=postgres
+        DB_PASSWORD=your_password
+        JWT_SECRET=your_very_secret_key
+        JWT_EXPIRATION=86400000
+        PORT=8080
+
+
+3.  **Ensure your PostgreSQL database is running**
+
+    You can manually create the `testdb` database or configure it in `application.properties`.
+
+
+* * *
+
+### ▶️ Running the Application
+
+**Run with Maven:**
+
+    ./mvnw spring-boot:run
+
+**Or via your IDE:**
+
+*   Run `BookstoreApplication.java` as a Spring Boot application.
+
+The app will start at: [http://localhost:8080](http://localhost:8080)
+
+* * *
+
+### ✅ Testing the API
+
+*   Use Postman or REST client to hit endpoints.
+*   Default base path: `/api`
+*   Refer to [API Documentation](ApiDocumentation.md)
+
 ## Global API Response Structure
 
 All API responses follow a standardized structure to ensure consistency across the application.
