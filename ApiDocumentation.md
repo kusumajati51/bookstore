@@ -9,8 +9,8 @@ language_tabs:
   - php: PHP
   - java: Java
   - go: Go
-toc_footers: []
-includes: []
+toc_footers: [ ]
+includes: [ ]
 search: true
 code_clipboard: true
 highlight_theme: darkula
@@ -22,8 +22,6 @@ generator: "@tarslib/widdershins v4.0.30"
 # test
 
 Base URLs:
-
-* <a href="localhost:8080/api/">Develop Env: localhost:8080/api/</a>
 
 # Authentication
 
@@ -50,15 +48,15 @@ POST /auth/register
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» name|body|string| yes |none|
-|» password|body|string| yes |none|
-|» confirmPassword|body|string| yes |none|
-|» email|body|string| yes |none|
-|» phone|body|string| yes |none|
-|» gender|body|string| yes |none|
+| Name              | Location | Type   | Required | Description |
+|-------------------|----------|--------|----------|-------------|
+| body              | body     | object | no       | none        |
+| » name            | body     | string | yes      | none        |
+| » password        | body     | string | yes      | none        |
+| » confirmPassword | body     | string | yes      | none        |
+| » email           | body     | string | yes      | none        |
+| » phone           | body     | string | yes      | none        |
+| » gender          | body     | string | yes      | none        |
 
 > Response Examples
 
@@ -88,31 +86,31 @@ POST /auth/register
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|none|Inline|
+| HTTP Status Code | Meaning                                                          | Description | Data schema |
+|------------------|------------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)          | none        | Inline      |
+| 400              | [Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» token|string|true|none||none|
-|» error|null|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | object  | true     | none         |       | none        |
+| »» token  | string  | true     | none         |       | none        |
+| » error   | null    | true     | none         |       | none        |
 
 HTTP Status Code **400**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|null|true|none||none|
-|» error|string|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | null    | true     | none         |       | none        |
+| » error   | string  | true     | none         |       | none        |
 
 ## POST Login
 
@@ -129,11 +127,11 @@ POST /auth/login
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
-|» password|body|string| yes |none|
+| Name       | Location | Type   | Required | Description |
+|------------|----------|--------|----------|-------------|
+| body       | body     | object | no       | none        |
+| » email    | body     | string | yes      | none        |
+| » password | body     | string | yes      | none        |
 
 > Response Examples
 
@@ -163,31 +161,31 @@ POST /auth/login
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|none|Inline|
+| HTTP Status Code | Meaning                                                          | Description | Data schema |
+|------------------|------------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)          | none        | Inline      |
+| 400              | [Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» token|string|true|none||none|
-|» error|null|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | object  | true     | none         |       | none        |
+| »» token  | string  | true     | none         |       | none        |
+| » error   | null    | true     | none         |       | none        |
 
 HTTP Status Code **400**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|null|true|none||none|
-|» error|string|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | null    | true     | none         |       | none        |
+| » error   | string  | true     | none         |       | none        |
 
 ## GET Status User
 
@@ -224,33 +222,33 @@ See User Data
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» id|integer|true|none||none|
-|»» name|string|true|none||none|
-|»» email|string|true|none||none|
-|»» password|string|true|none||none|
-|»» isAdmin|boolean|true|none||none|
-|»» createdAt|string|true|none||none|
-|»» updatedAt|null|true|none||none|
-|»» enabled|boolean|true|none||none|
-|»» authorities|[string]|true|none||none|
-|»» username|string|true|none||none|
-|»» accountNonExpired|boolean|true|none||none|
-|»» accountNonLocked|boolean|true|none||none|
-|»» credentialsNonExpired|boolean|true|none||none|
-|» error|null|true|none||none|
+| Name                     | Type     | Required | Restrictions | Title | description                                                                               |
+|--------------------------|----------|----------|--------------|-------|-------------------------------------------------------------------------------------------|
+| » status                 | boolean  | true     | none         |       | Indicates whether the API call was successful (`true`) or failed (`false`).               |
+| » message                | string   | true     | none         |       | A message from the server, providing information about the request result.                |
+| » data                   | object   | true     | none         |       | The response data object returned by the API.                                             |
+| »» id                    | integer  | true     | none         |       | The unique identifier of the user.                                                        |
+| »» name                  | string   | true     | none         |       | The full name of the user.                                                                |
+| »» email                 | string   | true     | none         |       | The registered email address of the user.                                                 |
+| »» password              | string   | true     | none         |       | The hashed password of the user.                                                          |
+| »» isAdmin               | boolean  | true     | none         |       | If `true`, the user is an admin; if `false`, the user is a regular customer.              |
+| »» createdAt             | string   | true     | none         |       | The date and time when the user account was created.                                      |
+| »» updatedAt             | null     | true     | none         |       | The date and time when the user account was last updated. May be `null` if never updated. |
+| »» enabled               | boolean  | true     | none         |       | Indicates whether the user account is enabled.                                            |
+| »» authorities           | [string] | true     | none         |       | List of roles or permissions granted to the user.                                         |
+| »» username              | string   | true     | none         |       | The username used for authentication, typically the email.                                |
+| »» accountNonExpired     | boolean  | true     | none         |       | Indicates whether the user's account is not expired.                                      |
+| »» accountNonLocked      | boolean  | true     | none         |       | Indicates whether the user's account is not locked.                                       |
+| »» credentialsNonExpired | boolean  | true     | none         |       | Indicates whether the user's credentials (password) are still valid (not expired).        |
+| » error                  | null     | true     | none         |       | Detailed error information if the API call fails; `null` if successful.                   |
 
 ## POST Register Admin
 
@@ -270,12 +268,12 @@ Adding Admin
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
-|» password|body|string| yes |none|
-|» name|body|string| yes |none|
+| Name       | Location | Type   | Required | Description |
+|------------|----------|--------|----------|-------------|
+| body       | body     | object | no       | none        |
+| » email    | body     | string | yes      | none        |
+| » password | body     | string | yes      | none        |
+| » name     | body     | string | yes      | none        |
 
 > Response Examples
 
@@ -305,12 +303,22 @@ Adding Admin
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|none|Inline|
+| HTTP Status Code | Meaning                                                          | Description | Data schema |
+|------------------|------------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)          | none        | Inline      |
+| 400              | [Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1) | none        | Inline      |
 
 ### Responses Data Schema
+
+HTTP Status Code **200**
+
+| Name      | Type    | Required | Restrictions | Title | description                         |
+|-----------|---------|----------|--------------|-------|-------------------------------------|
+| » status  | boolean | true     | none         |       | none                                |
+| » message | string  | true     | none         |       | Status to knowing Success or Failed |
+| » data    | object  | true     | none         |       | none                                |
+| »» token  | string  | true     | none         |       | Token For Header Auth Bearer Token  |
+| » error   | null    | true     | none         |       | none                                |
 
 # Book
 
@@ -318,7 +326,7 @@ Adding Admin
 
 GET /book
 
-See Book 
+See Book
 
 > Response Examples
 
@@ -384,26 +392,26 @@ See Book
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|[object]|true|none||none|
-|»» id|integer|true|none||none|
-|»» title|string|true|none||none|
-|»» basePrice|integer|true|none||none|
-|»» type|string|true|none||none|
-|»» createdAt|string|true|none||none|
-|»» updatedAt|string¦null|true|none||none|
-|» error|null|true|none||none|
+| Name         | Type        | Required | Restrictions | Title | description |
+|--------------|-------------|----------|--------------|-------|-------------|
+| » status     | boolean     | true     | none         |       | none        |
+| » message    | string      | true     | none         |       | none        |
+| » data       | [object]    | true     | none         |       | none        |
+| »» id        | integer     | true     | none         |       | none        |
+| »» title     | string      | true     | none         |       | none        |
+| »» basePrice | integer     | true     | none         |       | none        |
+| »» type      | string      | true     | none         |       | none        |
+| »» createdAt | string      | true     | none         |       | none        |
+| »» updatedAt | string¦null | true     | none         |       | none        |
+| » error      | null        | true     | none         |       | none        |
 
 ## POST Add Book
 
@@ -442,36 +450,36 @@ POST /books
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|none|Inline|
+| HTTP Status Code | Meaning                                                          | Description | Data schema |
+|------------------|------------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)          | none        | Inline      |
+| 400              | [Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» id|integer|true|none||none|
-|»» title|string|true|none||none|
-|»» basePrice|integer|true|none||none|
-|»» type|string|true|none||none|
-|»» createdAt|string|true|none||none|
-|»» updatedAt|null|true|none||none|
-|» error|null|true|none||none|
+| Name         | Type    | Required | Restrictions | Title | description |
+|--------------|---------|----------|--------------|-------|-------------|
+| » status     | boolean | true     | none         |       | none        |
+| » message    | string  | true     | none         |       | none        |
+| » data       | object  | true     | none         |       | none        |
+| »» id        | integer | true     | none         |       | none        |
+| »» title     | string  | true     | none         |       | none        |
+| »» basePrice | integer | true     | none         |       | none        |
+| »» type      | string  | true     | none         |       | none        |
+| »» createdAt | string  | true     | none         |       | none        |
+| »» updatedAt | null    | true     | none         |       | none        |
+| » error      | null    | true     | none         |       | none        |
 
 HTTP Status Code **400**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|null|true|none||none|
-|» error|string|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | null    | true     | none         |       | none        |
+| » error   | string  | true     | none         |       | none        |
 
 ## GET Find By Id
 
@@ -479,9 +487,9 @@ GET /books/{id}
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|string| yes |none|
+| Name | Location | Type   | Required | Description |
+|------|----------|--------|----------|-------------|
+| id   | path     | string | yes      | none        |
 
 > Response Examples
 
@@ -505,26 +513,26 @@ GET /books/{id}
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» id|integer|true|none||none|
-|»» title|string|true|none||none|
-|»» basePrice|integer|true|none||none|
-|»» type|string|true|none||none|
-|»» createdAt|string|true|none||none|
-|»» updatedAt|string|true|none||none|
-|» error|null|true|none||none|
+| Name         | Type    | Required | Restrictions | Title | description |
+|--------------|---------|----------|--------------|-------|-------------|
+| » status     | boolean | true     | none         |       | none        |
+| » message    | string  | true     | none         |       | none        |
+| » data       | object  | true     | none         |       | none        |
+| »» id        | integer | true     | none         |       | none        |
+| »» title     | string  | true     | none         |       | none        |
+| »» basePrice | integer | true     | none         |       | none        |
+| »» type      | string  | true     | none         |       | none        |
+| »» createdAt | string  | true     | none         |       | none        |
+| »» updatedAt | string  | true     | none         |       | none        |
+| » error      | null    | true     | none         |       | none        |
 
 ## PUT Update
 
@@ -532,9 +540,9 @@ PUT /books/{id}
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|string| yes |none|
+| Name | Location | Type   | Required | Description |
+|------|----------|--------|----------|-------------|
+| id   | path     | string | yes      | none        |
 
 > Response Examples
 
@@ -558,9 +566,9 @@ PUT /books/{id}
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -570,9 +578,9 @@ DELETE /book/{id}
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|string| yes |none|
+| Name | Location | Type   | Required | Description |
+|------|----------|--------|----------|-------------|
+| id   | path     | string | yes      | none        |
 
 > Response Examples
 
@@ -589,9 +597,9 @@ DELETE /book/{id}
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -613,12 +621,12 @@ POST /api/purchases
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
-|» bookId|body|integer| yes |none|
-|» quantity|body|integer| yes |none|
+| Name       | Location | Type    | Required | Description |
+|------------|----------|---------|----------|-------------|
+| body       | body     | object  | no       | none        |
+| » email    | body     | string  | yes      | none        |
+| » bookId   | body     | integer | yes      | none        |
+| » quantity | body     | integer | yes      | none        |
 
 > Response Examples
 
@@ -642,26 +650,26 @@ POST /api/purchases
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» id|integer|true|none||none|
-|»» bookTitle|string|true|none||none|
-|»» bookType|string|true|none||none|
-|»» quantity|integer|true|none||none|
-|»» totalPrice|integer|true|none||none|
-|»» purchasedAt|string|true|none||none|
-|» error|null|true|none||none|
+| Name           | Type    | Required | Restrictions | Title | description |
+|----------------|---------|----------|--------------|-------|-------------|
+| » status       | boolean | true     | none         |       | none        |
+| » message      | string  | true     | none         |       | none        |
+| » data         | object  | true     | none         |       | none        |
+| »» id          | integer | true     | none         |       | none        |
+| »» bookTitle   | string  | true     | none         |       | none        |
+| »» bookType    | string  | true     | none         |       | none        |
+| »» quantity    | integer | true     | none         |       | none        |
+| »» totalPrice  | integer | true     | none         |       | none        |
+| »» purchasedAt | string  | true     | none         |       | none        |
+| » error        | null    | true     | none         |       | none        |
 
 ## GET All Purchase
 
@@ -715,26 +723,26 @@ GET /purchase
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|[object]|true|none||none|
-|»» id|integer|true|none||none|
-|»» bookTitle|string|true|none||none|
-|»» bookType|string|true|none||none|
-|»» quantity|integer|true|none||none|
-|»» totalPrice|integer|true|none||none|
-|»» purchasedAt|string|true|none||none|
-|» error|null|true|none||none|
+| Name           | Type     | Required | Restrictions | Title | description |
+|----------------|----------|----------|--------------|-------|-------------|
+| » status       | boolean  | true     | none         |       | none        |
+| » message      | string   | true     | none         |       | none        |
+| » data         | [object] | true     | none         |       | none        |
+| »» id          | integer  | true     | none         |       | none        |
+| »» bookTitle   | string   | true     | none         |       | none        |
+| »» bookType    | string   | true     | none         |       | none        |
+| »» quantity    | integer  | true     | none         |       | none        |
+| »» totalPrice  | integer  | true     | none         |       | none        |
+| »» purchasedAt | string   | true     | none         |       | none        |
+| » error        | null     | true     | none         |       | none        |
 
 ## POST Loyalty Point
 
@@ -750,10 +758,10 @@ POST /loyalty/points
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
+| Name    | Location | Type   | Required | Description |
+|---------|----------|--------|----------|-------------|
+| body    | body     | object | no       | none        |
+| » email | body     | string | yes      | none        |
 
 > Response Examples
 
@@ -770,9 +778,9 @@ POST /loyalty/points
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -806,30 +814,30 @@ GET /loyalty/points-user
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|403|[Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3)|none|Inline|
+| HTTP Status Code | Meaning                                                        | Description | Data schema |
+|------------------|----------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)        | none        | Inline      |
+| 403              | [Forbidden](https://tools.ietf.org/html/rfc7231#section-6.5.3) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|integer|true|none||none|
-|» error|null|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description           |
+|-----------|---------|----------|--------------|-------|-----------------------|
+| » status  | boolean | true     | none         |       | none                  |
+| » message | string  | true     | none         |       | none                  |
+| » data    | integer | true     | none         |       | this is loyalti point |
+| » error   | null    | true     | none         |       | none                  |
 
 HTTP Status Code **403**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|null|true|none||none|
-|» error|string|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | null    | true     | none         |       | none        |
+| » error   | string  | true     | none         |       | none        |
 
 # Reward
 
@@ -837,7 +845,7 @@ HTTP Status Code **403**
 
 POST /rewards
 
-MenamBah Kan Jenis Reward 
+MenamBah Kan Jenis Reward
 
 > Body Parameters
 
@@ -853,14 +861,14 @@ MenamBah Kan Jenis Reward
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» title|body|string| yes |none|
-|» bookId|body|integer| yes |none|
-|» requiredPoints|body|integer| yes |none|
-|» stock|body|integer| yes |none|
-|» isActive|body|boolean| yes |none|
+| Name             | Location | Type    | Required | Description |
+|------------------|----------|---------|----------|-------------|
+| body             | body     | object  | no       | none        |
+| » title          | body     | string  | yes      | none        |
+| » bookId         | body     | integer | yes      | none        |
+| » requiredPoints | body     | integer | yes      | none        |
+| » stock          | body     | integer | yes      | none        |
+| » isActive       | body     | boolean | yes      | none        |
 
 > Response Examples
 
@@ -884,26 +892,26 @@ MenamBah Kan Jenis Reward
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|object|true|none||none|
-|»» id|integer|true|none||none|
-|»» title|string|true|none||none|
-|»» requiredPoints|integer|true|none||none|
-|»» stock|integer|true|none||none|
-|»» isActive|boolean|true|none||none|
-|»» bookTitle|string|true|none||none|
-|» error|null|true|none||none|
+| Name              | Type    | Required | Restrictions | Title | description |
+|-------------------|---------|----------|--------------|-------|-------------|
+| » status          | boolean | true     | none         |       | none        |
+| » message         | string  | true     | none         |       | none        |
+| » data            | object  | true     | none         |       | none        |
+| »» id             | integer | true     | none         |       | none        |
+| »» title          | string  | true     | none         |       | none        |
+| »» requiredPoints | integer | true     | none         |       | none        |
+| »» stock          | integer | true     | none         |       | none        |
+| »» isActive       | boolean | true     | none         |       | none        |
+| »» bookTitle      | string  | true     | none         |       | none        |
+| » error           | null    | true     | none         |       | none        |
 
 ## GET Gett All Reward
 
@@ -975,9 +983,9 @@ Melihat List Reward
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -999,15 +1007,15 @@ PUT /rewards/{id}
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|string| yes |none|
-|body|body|object| no |none|
-|» title|body|string| yes |none|
-|» bookId|body|integer| yes |none|
-|» requiredPoints|body|integer| yes |none|
-|» stock|body|integer| yes |none|
-|» isActive|body|boolean| yes |none|
+| Name             | Location | Type    | Required | Description |
+|------------------|----------|---------|----------|-------------|
+| id               | path     | string  | yes      | none        |
+| body             | body     | object  | no       | none        |
+| » title          | body     | string  | yes      | none        |
+| » bookId         | body     | integer | yes      | none        |
+| » requiredPoints | body     | integer | yes      | none        |
+| » stock          | body     | integer | yes      | none        |
+| » isActive       | body     | boolean | yes      | none        |
 
 > Response Examples
 
@@ -1031,9 +1039,9 @@ PUT /rewards/{id}
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -1043,9 +1051,9 @@ DELETE /rewards/{id}
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|id|path|string| yes |none|
+| Name | Location | Type   | Required | Description |
+|------|----------|--------|----------|-------------|
+| id   | path     | string | yes      | none        |
 
 > Response Examples
 
@@ -1062,9 +1070,9 @@ DELETE /rewards/{id}
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
@@ -1083,11 +1091,11 @@ POST /rewards/redeem
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
-|» rewardId|body|integer| yes |none|
+| Name       | Location | Type    | Required | Description |
+|------------|----------|---------|----------|-------------|
+| body       | body     | object  | no       | none        |
+| » email    | body     | string  | yes      | none        |
+| » rewardId | body     | integer | yes      | none        |
 
 > Response Examples
 
@@ -1115,30 +1123,30 @@ POST /rewards/redeem
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|none|Inline|
+| HTTP Status Code | Meaning                                                          | Description | Data schema |
+|------------------|------------------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)          | none        | Inline      |
+| 400              | [Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|string|true|none||none|
-|» error|null|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | string  | true     | none         |       | none        |
+| » error   | null    | true     | none         |       | none        |
 
 HTTP Status Code **400**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|null|true|none||none|
-|» error|string|true|none||none|
+| Name      | Type    | Required | Restrictions | Title | description |
+|-----------|---------|----------|--------------|-------|-------------|
+| » status  | boolean | true     | none         |       | none        |
+| » message | string  | true     | none         |       | none        |
+| » data    | null    | true     | none         |       | none        |
+| » error   | string  | true     | none         |       | none        |
 
 ## POST Redem Hystory History
 
@@ -1154,10 +1162,10 @@ POST /rewards/history
 
 ### Params
 
-|Name|Location|Type|Required|Description|
-|---|---|---|---|---|
-|body|body|object| no |none|
-|» email|body|string| yes |none|
+| Name    | Location | Type   | Required | Description |
+|---------|----------|--------|----------|-------------|
+| body    | body     | object | no       | none        |
+| » email | body     | string | yes      | none        |
 
 > Response Examples
 
@@ -1185,23 +1193,23 @@ POST /rewards/history
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|[object]|true|none||none|
-|»» rewardTitle|string|true|none||none|
-|»» pointsUsed|integer|true|none||none|
-|»» redeemedAt|string|true|none||none|
-|» error|null|true|none||none|
+| Name           | Type     | Required | Restrictions | Title | description |
+|----------------|----------|----------|--------------|-------|-------------|
+| » status       | boolean  | true     | none         |       | none        |
+| » message      | string   | true     | none         |       | none        |
+| » data         | [object] | true     | none         |       | none        |
+| »» rewardTitle | string   | true     | none         |       | none        |
+| »» pointsUsed  | integer  | true     | none         |       | none        |
+| »» redeemedAt  | string   | true     | none         |       | none        |
+| » error        | null     | true     | none         |       | none        |
 
 ## GET User Redem Hystory
 
@@ -1233,23 +1241,22 @@ GET /rewards/redeem-history
 
 ### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|none|Inline|
+| HTTP Status Code | Meaning                                                 | Description | Data schema |
+|------------------|---------------------------------------------------------|-------------|-------------|
+| 200              | [OK](https://tools.ietf.org/html/rfc7231#section-6.3.1) | none        | Inline      |
 
 ### Responses Data Schema
 
 HTTP Status Code **200**
 
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» status|boolean|true|none||none|
-|» message|string|true|none||none|
-|» data|[object]|true|none||none|
-|»» rewardTitle|string|true|none||none|
-|»» pointsUsed|integer|true|none||none|
-|»» redeemedAt|string|true|none||none|
-|» error|null|true|none||none|
+| Name           | Type     | Required | Restrictions | Title | description |
+|----------------|----------|----------|--------------|-------|-------------|
+| » status       | boolean  | true     | none         |       | none        |
+| » message      | string   | true     | none         |       | none        |
+| » data         | [object] | true     | none         |       | none        |
+| »» rewardTitle | string   | true     | none         |       | none        |
+| »» pointsUsed  | integer  | true     | none         |       | none        |
+| »» redeemedAt  | string   | true     | none         |       | none        |
+| » error        | null     | true     | none         |       | none        |
 
 # Data Schema
-
